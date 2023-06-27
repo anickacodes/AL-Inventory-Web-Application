@@ -17,6 +17,7 @@
     width: 500px;
     height: 777px;
     position: absolute;
+    top:50px;
     right: 11%;
     bottom: 6px;
     border: 8px outset rgba(19, 92, 92, 0.828);
