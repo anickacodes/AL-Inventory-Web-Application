@@ -1,154 +1,32 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="./app.js" defer></script>
-    <link rel="stylesheet" href="./style.css"/>
+    <!-- <meta name="color-scheme" content="dark"> -->
+
+    <link rel="stylesheet" href="./style.css">
     <link rel="icon" type="image" href="./assets/cnl.jpeg">
-    <title>CLN Stylez Client Inventory</title>
-</head>
 
-<!-- <div class="topnav">
-    <a class="active" href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-    <div class="login-container">
-      <form action="/action_page.php">
-        <input type="text" placeholder="Username" name="username">
-        <input type="text" placeholder="Password" name="psw">
-        <button type="submit">Login</button>
-      </form>
-    </div>
-  </div> -->
+    <script src="./app.js" defer></script>
 
-<body >
-    <!-- id="body" onload="" -->
-    <div id="header">
-   <h1>Client List</h1>
-</div>
-
-<!-- <!DOCTYPE html>
-
-<head>
-    <meta charset="UTF-8">
-    <title>LogIn and SignUp Page</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Document</title>
 </head>
 
 <body>
-    <div class="box">
-
-        <img src="icon.png">
-        <div class="page">
-            <div class="header">
-                <a id="login" class="active" href="#login">login</a>
-                <a id="signup" href="#signup">signup</a>
-            </div>
-            <div id="errorMsg"></div>
-            <div class="content">
-                <form class="login" name="loginForm" onsubmit="return validateLoginForm()" method="POST">
-                    <input type="text" name="name" id="logName" placeholder="Username">
-                    <input type="password" name="password" id="logPassword" placeholder="Password">
-                    <div id="check">
-                        <input type="checkbox" id="remember">
-                        <label for="remember">Remember me</label>
-                    </div>
-                    <br><br>
-                    <input type="submit" value="Login">
-                    <a href="#">Forgot Password?</a>
-                </form>
-                <form class="signup" name="signupForm" onsubmit="return validateSignupForm()" method="POST">
-                    <input type="email" name="email" id="signEmail" placeholder="Email">
-                    <input type="text" name="name" id="signName" placeholder="Username">
-                    <input type="password" name="password" id="signPassword" placeholder="Password"><br>
-                    <input type="submit" value="SignUp">
-                </form>
-            </div>
-        </div>
+    <div class="login-container">
+        <form action="" method="post">
+            <input type="text" placeholder="E-mail" name="e-mail">
+            <input type="password" placeholder="Password" name="password">
+            <button type="submit">Login</button>
+        </form>
     </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="index.js"></script>
+    </div>
+    <div id="header">
+        <h1>Client List</h1>
+    </div>
 
 </body>
-</html> 
 
-
-<!-- Created By CodingNepal -->
-
-      <div class="wrapper">
-         <div class="title-text">
-            <div class="title login">
-               Login Form
-            </div>
-            <div class="title signup">
-               Signup Form
-            </div>
-         </div>
-         <div class="form-container">
-            <div class="slide-controls">
-               <input type="radio" name="slide" id="login" checked>
-               <input type="radio" name="slide" id="signup">
-               <label for="login" class="slide login">Login</label>
-               <label for="signup" class="slide signup">Signup</label>
-               <div class="slider-tab"></div>
-            </div>
-            <div class="form-inner">
-               <form action="#" class="login">
-                  <div class="field">
-                     <input type="text" placeholder="Email Address" required>
-                  </div>
-                  <div class="field">
-                     <input type="password" placeholder="Password" required>
-                  </div>
-                  <div class="pass-link">
-                     <a href="#">Forgot password?</a>
-                  </div>
-                  <div class="field btn">
-                     <div class="btn-layer"></div>
-                     <input type="submit" value="Login">
-                  </div>
-                  <div class="signup-link">
-                     Not a member? <a href="">Signup now</a>
-                  </div>
-               </form>
-               <form action="#" class="signup">
-                  <div class="field">
-                     <input type="text" placeholder="Email Address" required>
-                  </div>
-                  <div class="field">
-                     <input type="password" placeholder="Password" required>
-                  </div>
-                  <div class="field">
-                     <input type="password" placeholder="Confirm password" required>
-                  </div>
-                  <div class="field btn">
-                     <div class="btn-layer"></div>
-                     <input type="submit" value="Signup">
-                  </div>
-               </form>
-            </div>
-         </div>
-      </div>
-      <script>
-         const loginText = document.querySelector(".title-text .login");
-         const loginForm = document.querySelector("form.login");
-         const loginBtn = document.querySelector("label.login");
-         const signupBtn = document.querySelector("label.signup");
-         const signupLink = document.querySelector("form .signup-link a");
-         signupBtn.onclick = (()=>{
-           loginForm.style.marginLeft = "-50%";
-           loginText.style.marginLeft = "-50%";
-         });
-         loginBtn.onclick = (()=>{
-           loginForm.style.marginLeft = "0%";
-           loginText.style.marginLeft = "0%";
-         });
-         signupLink.onclick = (()=>{
-           signupBtn.click();
-           return false;
-         });
-      </script>
-   </body>
 </html>
