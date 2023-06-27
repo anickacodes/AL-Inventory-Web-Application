@@ -22,34 +22,44 @@
             <button type="submit">Login</button>
         </form>
     </div>
-    <h1>Client List</h1>
-   <section id="landing-page">
-    <div id="client-container">
-        <div class="row">
+    <main role="main">
+        <h1>Client List</h1>
+
+        <section id="landing-page">
+
             <div id="new-clients-container" class="col">
-             <span>Create Client Profile</span>
-             <!-- this will be a form containing sample info inputs -->
-             <form method="post" action="submit.php" class="create-client">
-                <!-- <span>Client INFO</span> -->
-            <input>
-        </form>
+                <span>Create Client Profile</span>
+
+                <form method="post" action="submit.php" class="create-client">
+                    <label>Profile Image</label><br />
+                    <div class="custom-dropdown">
+                        <input type="file" id="profile_pic" name="profile_pic" accept=".jpg, .jpeg, .png">
+                    </div>
+                    <label>Name:</label><br />
+                    <input id="name" type="text" placeholder="Client Name"><br />
+                    <label>Occuation:</label><br />
+                    <input id="occupation" type="text" placeholder="occupation">
+
+
+                </form>
             </div>
+
             <div id="added-clients-container" class="col">
                 <!-- this should be 3 default pics w sample info -->
-             <span id="added" >New Clients Added</span>
-              <div class="client">
-                <h2>Jane Doe</h2>
-              </div>
-              <div class="client">
-                <h2>John Doe</h2>
-              </div>
-              <div class="client">
-                <h2>Jill Doe</h2>
-              </div>
+                <span id="added">New Clients Added</span>
+                <div class="client">
+                    <h2>Jane Doe</h2>
+                </div>
+                <div class="client">
+                    <h2>John Doe</h2>
+                </div>
+                <div class="client">
+                    <h2>Jill Doe</h2>
+                </div>
             </div>
-          </div>
-    </div>
-</section>
+
+        </section>
 </body>
+</main>
 
 </html>
