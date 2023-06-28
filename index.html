@@ -29,34 +29,83 @@
 
             <div id="new-clients-container" class="col">
                 <span>Create Client Profile</span>
-
+                <div><img src="./assets/new_default.jpeg" width="40%"> </div>
                 <form method="post" action="submit.php" class="create-client">
                     <label>Profile Image</label><br />
                     <div class="custom-dropdown">
-                        <input type="file" id="profile_pic" name="profile_pic" accept=".jpg, .jpeg, .png">
-                    </div>
-                    <label>Name:</label><br />
-                    <input id="name" type="text" placeholder="Client Name"><br />
-                    <label>Occuation:</label><br />
-                    <input id="occupation" type="text" placeholder="occupation">
+                       
+                        <select>
+                            <option>default</option>
+                            <option><a name=".occupation" href=".occupation"></a>No Image</option>
+                        </select><br />
 
-
+                        <label class="create-now">Name:</label><br />
+                        <input id="name" type="text" placeholder="Preferred Name"><br />
+                        <label class="occupation">Occuation:</label><br />
+                        <input id="occupation" type="text" placeholder="Occupation"><br />
+                        <!-- Rectangular switch -->
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider"></span>
+                        </label>
+                        <br />
+                        <!-- Rounded switch -->
+                        <!-- <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label> <br /> -->
+                        <button id="create" type="button">Clear</button>
+                        <input id="submit" type="submit" />
                 </form>
             </div>
 
             <div id="added-clients-container" class="col">
-                <!-- this should be 3 default pics w sample info -->
                 <span id="added">New Clients Added</span>
                 <div class="client">
-                    <h2>Jane Doe</h2>
+                    <img src="./assets/new_default.jpeg" width="17%" />
+                    <h2>KeatsDidIt</h2>
+                    <div class="info">
+                        <p>Entrepreneaur</p>
+                        <form>
+                            <fieldset>
+                                <legend>Status:</legend>
+                                <div>
+                                    <input type="radio" id="contactChoice1" name="contact" value="email"
+                                        checked />Active
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                    <div class="client">
+
+                        <img src="./assets/new_default.jpeg" width="17%" />
+                        <h2>Robyn Fenty</h2>
+                        <p>Student</p>
+                        <form>
+                            <fieldset>
+                                <legend>Status:</legend>
+                                <div>
+                                    <input type="radio" id="contactChoice1" name="contact" value="email"
+                                        checked />Active
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                    <div class="client">
+                        <img src="./assets/new_default.jpeg" width="17%" />
+                        <h2>Doe Jones</h2>
+                        <p>Teacher</p>
+                        <form>
+                            <fieldset>
+                                <legend>Status:</legend>
+                                <div>
+                                    <input type="radio" id="contactChoice1" name="contact" value="email"
+                                        checked />Active
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
                 </div>
-                <div class="client">
-                    <h2>John Doe</h2>
-                </div>
-                <div class="client">
-                    <h2>Jill Doe</h2>
-                </div>
-            </div>
 
         </section>
 </body>

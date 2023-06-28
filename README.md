@@ -25,8 +25,8 @@ Users can see a header on the top of the page that includes a title for the web 
 
 Users can see three unique resources, that include the following fields and at least two others:
 name
-price
-in stock
+price / occupation 
+in stock / active client
 
 Users can see a "Remove" button associated with each resource.
 

@@ -3,34 +3,100 @@
     padding: 0px;
 }
 
+body {
+    background-color: rgba(2, 36, 35, 0.148);
+}
 .login-container {
     position: absolute;
     right: 30px;
     width: 180px;
 }
 
-body {
-background-color: rgba(170, 220, 221, 0.738);
-}
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 58px;
+    height: 30px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #cccccc;
+    -webkit-transition: .4s;
+    transition: .3s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "Active";
+    height: 23px;
+    width: 23px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #082136;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0px 1px 1px #051f33;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(25px);
+    -ms-transform: translateX(25px);
+    transform: translateX(25px);
+  }
+  
+  /* Rounded sliders */
+  /* .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
 
+span ,label {
 
+    color:rgb(217, 202, 184)
+} */
 
 #new-clients-container {
     display: grid;
-    text-align:inherit;
-    margin: 10px;
+    text-align: center;
+    margin: 180px 12px 30px 140px;
     width: 300px;
-    height: 450px;
-    border: 8px outset rgba(19, 92, 92, 0.828);
-    border-radius: 1.3em;
+    height: 480px;
+    padding: 10px;
+    border: 7px outset rgba(19, 92, 92, 0.828);
+    border-radius: 1.2em;
     background-color: blue;
 }
 
 #added-clients-container {
     display: grid;
-    margin: 3px;
+    margin: 33px;
     width: 500px;
-    height: 777px;
+    height: 717px;
     position: absolute;
     top: 50px;
     right: 11%;
@@ -49,3 +115,54 @@ background-color: rgba(170, 220, 221, 0.738);
     padding: 2px;
 }
 
+
+/* html {
+    font-family: sans-serif;
+  } */
+  
+  /* div:first-of-type {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 5px;
+  }
+   */
+  
+  #contactChoice1 {
+    appearance: none;
+  
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+  
+    border: 2px solid #999;
+    transition: 0.2s all linear;
+    margin-right: 5px;
+  
+    position: relative;
+    top: 2.3px;
+  }
+  
+  #contactChoice1:checked {
+    border: 6px solid rgb(20, 16, 16);
+  }
+  
+  
+  legend {
+    color: white;
+    background-color: rgba(108, 62, 72, 0.913);
+    padding: 6px;
+    border-radius: 2px;
+    border: 0;
+    font-size: 16px;
+  }
+  
+  /* button:hover,
+  button:focus {
+    color: #999;
+  }
+  
+  button:active {
+    background-color: white;
+    color: black;
+    outline: 1px solid black;
+  } */
