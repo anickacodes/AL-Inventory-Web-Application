@@ -3,3 +3,52 @@ default img for client card
 <img src="url" loading="auto" alt="some_text" width="" height="">
 
 cited pages 
+w3shools 😭🙏🏽, developerMozilla, 
+boxes, bootstrap, div creation, text styling, shadowing, box model
+
+https://github.com/RaymondZhang20/Inventory-Managment/tree/master
+
+
+stretch goals :
+toggle
+2nd html , all working link
+alert
+
+things done:
+dropdown
+grids w rows and columns
+reset button & 
+clear form works 🥹🥹🥲
+sumbit button
+INSTOCK = ACTIVE CLIENT 
+toggle to add to active resource
+login
+directory html
+
+events : 
+change, 
+click,
+submit,
+contentload,
+
+
+
+
+things to add
+-are you sure you want to remove client from database/list
+
+
+
+
+
+questions for sam
+
+i have set for 100vh-viewwidth w a min of 650
+but view still gets smaller ? ? ? 
+
+how does it look 😭
+
+what should i remove 🫠
+
+what should i add 😶
+

@@ -32,13 +32,13 @@
         <section id="landing-page">
 
             <div class="new-clients-container">
-                <p id="new-1">Create Client Profile</p>
+                <p id="new-1">Create New Client Profile</p>
                 <div><img src="./assets/new_default.jpeg" width="44%"> </div>
                 <form method="post" action="submit.php" class="create-client">
-                    <label id="new-2">Profile Image</label><br />
+                    <label id="new-2">Image</label><br />
                     <div class="custom-dropdown">
 
-                        <select>
+                        <select class="dropdown">
                             <option value="default">Default</option>
                             <option value="no-image" class="no-image-option">No Image</option>
                         </select><br />
@@ -73,15 +73,15 @@
                         <div class="info">
                             <p><em>Entrepreneaur</em></p>
                             <form>
-                                <fieldset>
-                                    <legend>Status:</legend>
-                                    <div>
-                                        <input type="radio" class="contactChoice1" name="contact" value="email"
-                                            checked />
-                                        <p>Active</p>
-                                        <input type="reset">
-                                    </div>
-                                </fieldset>
+                                <!-- <fieldset> -->
+                                <legend>Status:</legend>
+                                <div>
+                                    <input type="radio" class="contactChoice1" name="contact" value="email" checked />
+                                    <p>Active</p>
+                                    <input type="reset" />
+                                    <!-- onclick="resetStatus(this)" -->
+                                </div>
+                                <!-- </fieldset> -->
                             </form>
                         </div>
                         <div class="client">
@@ -91,16 +91,15 @@
                             <p><em>Student</em></p>
                             <form>
                                 <div class="choice-options">
-                                    <fieldset>
-                                        <legend>Status:</legend>
+                                    <!-- <fieldset> -->
+                                    <legend>Status:</legend>
 
-                                        <input type="radio" class="contactChoice1" name="contact" value="email"
-                                            checked />
-                                        <p>Active</p>
+                                    <input type="radio" class="contactChoice1" name="contact" value="email" checked />
+                                    <p>Active</p>
 
-                                        <input type="reset">
+                                    <input type="reset">
 
-                                    </fieldset>
+                                    <!-- </fieldset> -->
                                 </div>
                             </form>
                         </div>
@@ -110,15 +109,15 @@
                             <p><em>Teacher</em></p>
                             <form>
                                 <div class="choice-options">
-                                    <fieldset>
-                                        <legend>Status:</legend>
-                                        <div>
-                                            <input type="radio" class="contactChoice1" name="contact" value="email"
-                                                checked />
-                                            <p>Active</p>
-                                            <input type="reset">
-                                        </div>
-                                    </fieldset>
+                                    <!-- <fieldset> -->
+                                    <legend>Status:</legend>
+                                    <div>
+                                        <input type="radio" class="contactChoice1" name="contact" value="email"
+                                            checked />
+                                        <p>Active</p>
+                                        <input type="reset">
+                                    </div>
+                                    <!-- </fieldset> -->
                                 </div>
                             </form>
                         </div>

@@ -37,6 +37,20 @@ h1 {
     text-align: center;
     padding: 2.5%;
 }
+
+#new-1 {
+    margin: 5px;
+    padding: 2px 12px;
+    font-size: 25px;
+    border-style: double;
+    border-color:#f0f0f0
+}
+label {
+    
+    border-style: dotted;
+    font-size: 20px;
+}
+
 .new-clients-container {
     display: grid;
     text-align: center;
@@ -49,9 +63,9 @@ h1 {
     background-color: #4242ea
 }
 
-.all-new-clients{
+.all-new-clients {
 
-margin: 28px 90px ;
+    margin: 28px 90px;
 }
 
 fieldset {
@@ -59,6 +73,7 @@ fieldset {
     width: auto;
     height: auto;
 }
+
 .clients-container {
     position: absolute;
     top: 50px;
@@ -74,6 +89,7 @@ fieldset {
     grid-template-rows: repeat(3, 1fr);
     row-gap: 3.4px;
 }
+
 /* .no-image-option {
     background-image: url("./assets/new_default.jpeg");
     background-repeat: no-repeat;
@@ -85,11 +101,7 @@ h2 {
     text-shadow: 1px 1px 1px rgb(78, 224, 197), 2px 2px 1px rgba(208, 16, 16, 0.882);
 }
 
-p {
-    em {
-        display: block;
-    }
-}
+
 
 /* The switch - the box around the slider */
 .switch {
@@ -178,9 +190,7 @@ input:checked+.slider:before {
     padding: 2px;
 }
 
-#new-1 {
-    font-size: 30px;
-}
+
 
 /* html {
     font-family: sans-serif;
