@@ -1,54 +1,77 @@
-default img for client card 
+default img for client card - tried to make this a dropdown event 
 
 <img src="url" loading="auto" alt="some_text" width="" height="">
 
 cited pages 
-w3shools 😭🙏🏽, developerMozilla, 
-boxes, bootstrap, div creation, text styling, shadowing, box model
+    adobe-stock
+    w3shools 😭🙏🏽, developerMozilla, stackoverflow, scaler, geek for geeks
+    boxes, bootstrap, div creation, text styling, shadowing, box model
+    who else 🙃 ; google is my best friend
 
-https://github.com/RaymondZhang20/Inventory-Managment/tree/master
-
-
-stretch goals :
-toggle
-2nd html , all working link
-alert
-
-things done:
-dropdown
-grids w rows and columns
-reset button & 
-clear form works 🥹🥹🥲
-sumbit button
-INSTOCK = ACTIVE CLIENT 
-toggle to add to active resource
-login
-directory html
-
-events : 
-change, 
-click,
-submit,
-contentload,
+    https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-time-element
+    https://github.com/RaymondZhang20/Inventory-Managment/tree/master
 
 
+✨🙆🏽‍♀️stretch goals :
+    toggle
+    userLogin => 2nd html
+    all working links
+    alert
+
+🙌🏽👏🏽Created & functioning:
+    dropdown
+    grids w rows and columns
+    clear form works 🥹🥹🥲
+    sumbit button 
+    INSTOCK = ACTIVE CLIENT 
+    toggle to add to active resource **
+    login
+    directory folder w :
+    client management page(lead from login submit btn)
+    message
+    photo
+
+🎉🎪events : 
+    change, 
+    click,
+    submit,
+    DOMContentLoaded,
+
+ 🤪😜things to add:
+    -require 3 inputs when creating & handle that edgecase if not met( & keep inputs)
+    -when you create the client, where do they go ?? make:
+        the form clear
+        new client return(👀) @ the top of new clients
+    -do i need a count for the resources (clients) accumulate where: active v inactive ??
+    -make the reset buttons say 'remove'
+    -get reset buttons to remove client from list(s)
+    -are you sure you want to remove client from page/database/list
+    **make active resources add users to html in directory
+    -fresh README
 
 
-things to add
--are you sure you want to remove client from database/list
+
+✨✨✨✨✨ SAM'S QUESTIONS :: ✨✨✨✨✨
+
+    ***GARY'S BDAY CARD***
+
+    ✨i have set for 100vh-viewwidth w a min of 650
+    but view still gets smaller ? ? ? 
+
+my video link being weird
+
+    ✨how does it look 😭
+        this enoough for a 90?? 😂😂
 
 
+    ✨what should i remove 🫠
 
 
+    ✨what should i add 😶
 
-questions for sam
 
-i have set for 100vh-viewwidth w a min of 650
-but view still gets smaller ? ? ? 
+    ✨what needs to be done to create that next database
 
-how does it look 😭
+✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨
 
-what should i remove 🫠
-
-what should i add 😶
-
+lets not append strings lol 

@@ -4,29 +4,29 @@ Pre-End of Mod 2 Project
 **ignore below**
 In this project, you will build a simple inventory management application for a single resource. That resource could be shoes, books, snacks, or anything else you are interested in. Through your application, you will be able to visually display a few resources, remove those resources, and create new resources. This project will require heavy DOM manipulation in addition to a solid understanding of HTML and CSS.
 
-##Project Scoring
+## Project-Scoring
 This project has two different parts on which you will be graded. Each part is weighted differently.
 
 
 
-##Completion
+## Completion
 
 Your GitHub repository should have a README.md file with setup instructions and a guide on how to run your application.
 
-***Styling***
+## Styling
 The page should have a cohesive and professional style, that makes use of a few specific colors.
 
 The page should make use of CSS Grid, and include at least two columns.
 
 The page should have at least one responsive element on the page that changes depending on the screen's size.
 
-***On Load Features***
+## On Load Features
 Users can see a header on the top of the page that includes a title for the web application.
 
 Users can see three unique resources, that include the following fields and at least two others:
 name
-price / occupation 
-in stock / active client
+price *occupation*
+in stock *active client*
 
 Users can see a "Remove" button associated with each resource.
 
@@ -58,10 +58,16 @@ When you submit your pull request, make sure to include a description of any str
 
 #When a resource is clicked, the element is expanded and more information is displayed.
 
+*DID THAT*
 #If a field is missing a value, provide a default value when a resource is created on the page.
 
+*OH THIS FANCY*
 #Allow for the ability to edit existing resources, by using the already existing form.
 
+
+*DAMN I WANT TO TRY- after the new creation, transition to top?? oh lord*
 #Incorporate complex CSS properties like transition effects.
 
+
+*originally i had a sticky div so make a sticky foot*
 #Create a Footer that sticks to the bottom of the browser window even if all elements have been removed.
