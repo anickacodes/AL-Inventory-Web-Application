@@ -8,10 +8,11 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
   loginForm.addEventListener("submit", function (event) {
     event.preventDefault();
+    window.location.href = "./directory/directory.html"
 
-    alert(
-      "Functionality in progress\nPlease continue to creating a new profile"
-    );
+    // alert(
+    //   "Functionality in progress\nPlease continue to creating a new profile" );
+   
   });
 
   switchInput.addEventListener("change", (event) => {
@@ -29,7 +30,4 @@ document.addEventListener("DOMContentLoaded", (event) => {
   }
 });
 
-// function resetStatus(resetButton) {
-//     const statusInput = resetButton.parentNode.querySelector('input[type="radio"]');
-//     statusInput.checked = true;
-// }
+
