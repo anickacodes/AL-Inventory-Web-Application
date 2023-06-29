@@ -10,6 +10,7 @@
     <link rel="icon" type="image" href="./assets/cnl.jpeg">
 
     <script src="./app.js" defer></script>
+    <nav><a id="directory" href="./directory/directory.html">Client Directory</a></nav>
 
     <title>CLN Stylez CMD </title>
 </head>
@@ -17,21 +18,21 @@
 <body>
     <div class="container"></div>
     <div class="login-container">
-        <form action="" method="post">
+        <form id="log-in-form" action="" method="post">
             <label for="e-mail">Email</label>
-            <input id="e-mail"type="text" placeholder="E-mail" name="e-mail">
+            <input id="e-mail" type="text" placeholder="E-mail" name="e-mail">
             <label for="password">Password:</label>
-            <input id="password"type="password" placeholder="Password" name="password" >
+            <input id="password" type="password" placeholder="Password" name="password">
             <button type="submit">Login</button>
         </form>
     </div>
     <main role="main">
-        <h1>Client List</h1>
+        <h1>Client Management</h1>
 
         <section id="landing-page">
 
-            <div class="new-clients-container" >
-                <span id="new-1">Create Client Profile</span>
+            <div class="new-clients-container">
+                <p id="new-1">Create Client Profile</p>
                 <div><img src="./assets/new_default.jpeg" width="44%"> </div>
                 <form method="post" action="submit.php" class="create-client">
                     <label id="new-2">Profile Image</label><br />
@@ -59,62 +60,73 @@
                         </label> <br /> -->
                         <button id="create" type="button">Clear</button>
                         <input id="submit" type="submit" />
-                        </div>
+                    </div>
                 </form>
             </div>
 
             <div class="clients-container">
-                <div>
-                <span id="added">New Clients Added</span>
-                <div class="client">
-                    <img src="./assets/new_default.jpeg" width="17%" />
-                    <h2>KeatsDidIt</h2>
-                    <div class="info">
-                        <p><em>Entrepreneaur</em></p>
-                        <form>
-                            <fieldset>
-                                <legend>Status:</legend>
-                                <div>
-                                    <input type="radio" class="contactChoice1" name="contact" value="email"
-                                        checked />
+                <div class="all-new-clients">
+                    <p id="added">New Clients Added</p>
+                    <div class="client">
+                        <img src="./assets/new_default.jpeg" width="17%" />
+                        <h2>KeatsDidIt</h2>
+                        <div class="info">
+                            <p><em>Entrepreneaur</em></p>
+                            <form>
+                                <fieldset>
+                                    <legend>Status:</legend>
+                                    <div>
+                                        <input type="radio" class="contactChoice1" name="contact" value="email"
+                                            checked />
                                         <p>Active</p>
-                                </div>
-                            </fieldset>
-                        </form>
-                    </div>
-                    <div class="client">
+                                        <input type="reset">
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+                        <div class="client">
 
-                        <img src="./assets/new_default.jpeg" width="17%" />
-                        <h2>Robyn Fenty</h2>
-                        <p><em>Student</em></p>
-                        <form>
-                            <fieldset>
-                                <legend>Status:</legend>
-                                <div>
-                                    <input type="radio" class="contactChoice1" name="contact" value="email"
-                                        checked /><p>Active</p>
+                            <img src="./assets/new_default.jpeg" width="17%" />
+                            <h2>Robyn Fenty</h2>
+                            <p><em>Student</em></p>
+                            <form>
+                                <div class="choice-options">
+                                    <fieldset>
+                                        <legend>Status:</legend>
+
+                                        <input type="radio" class="contactChoice1" name="contact" value="email"
+                                            checked />
+                                        <p>Active</p>
+
+                                        <input type="reset">
+
+                                    </fieldset>
                                 </div>
-                            </fieldset>
-                        </form>
-                    </div>
-                    <div class="client">
-                        <img src="./assets/new_default.jpeg" width="17%" />
-                        <h2>Doe Jones</h2>
-                        <p><em>Teacher</em></p>
-                        <form>
-                            <fieldset>
-                                <legend>Status:</legend>
-                                <div>
-                                    <input type="radio" class="contactChoice1" name="contact" value="email"
-                                        checked /><p>Active</p>
+                            </form>
+                        </div>
+                        <div class="client">
+                            <img src="./assets/new_default.jpeg" width="17%" />
+                            <h2>Doe Jones</h2>
+                            <p><em>Teacher</em></p>
+                            <form>
+                                <div class="choice-options">
+                                    <fieldset>
+                                        <legend>Status:</legend>
+                                        <div>
+                                            <input type="radio" class="contactChoice1" name="contact" value="email"
+                                                checked />
+                                            <p>Active</p>
+                                            <input type="reset">
+                                        </div>
+                                    </fieldset>
                                 </div>
-                            </fieldset>
-                        </form>
+                            </form>
+                        </div>
                     </div>
                 </div>
-            </div>
         </section>
-</div>
-</main>
+        </div>
+    </main>
 </body>
+
 </html>

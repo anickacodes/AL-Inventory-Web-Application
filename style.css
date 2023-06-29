@@ -42,14 +42,23 @@ h1 {
     text-align: center;
     margin: 97px 12px 30px 140px;
     width: 300px;
-    height: 480px;
+    height: 380px;
     padding: 3%;
     border: 7px outset rgba(19, 92, 92, 0.828);
     border-radius: 1.2em;
     background-color: #4242ea
 }
 
+.all-new-clients{
 
+margin: 28px 90px ;
+}
+
+fieldset {
+    border-color: blue;
+    width: auto;
+    height: auto;
+}
 .clients-container {
     position: absolute;
     top: 50px;
