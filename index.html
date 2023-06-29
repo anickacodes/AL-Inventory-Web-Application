@@ -15,10 +15,13 @@
 </head>
 
 <body>
+    <div class="container"></div>
     <div class="login-container">
         <form action="" method="post">
-            <input type="text" placeholder="E-mail" name="e-mail">
-            <input type="password" placeholder="Password" name="password">
+            <label for="e-mail">Email</label>
+            <input id="e-mail"type="text" placeholder="E-mail" name="e-mail">
+            <label for="password">Password:</label>
+            <input id="password"type="password" placeholder="Password" name="password" >
             <button type="submit">Login</button>
         </form>
     </div>
@@ -27,16 +30,16 @@
 
         <section id="landing-page">
 
-            <div id="new-clients-container" class="col">
-                <span>Create Client Profile</span>
-                <div><img src="./assets/new_default.jpeg" width="40%"> </div>
+            <div class="new-clients-container" >
+                <span id="new-1">Create Client Profile</span>
+                <div><img src="./assets/new_default.jpeg" width="44%"> </div>
                 <form method="post" action="submit.php" class="create-client">
-                    <label>Profile Image</label><br />
+                    <label id="new-2">Profile Image</label><br />
                     <div class="custom-dropdown">
-                       
+
                         <select>
-                            <option>default</option>
-                            <option><a name=".occupation" href=".occupation"></a>No Image</option>
+                            <option value="default">Default</option>
+                            <option value="no-image" class="no-image-option">No Image</option>
                         </select><br />
 
                         <label class="create-now">Name:</label><br />
@@ -56,22 +59,25 @@
                         </label> <br /> -->
                         <button id="create" type="button">Clear</button>
                         <input id="submit" type="submit" />
+                        </div>
                 </form>
             </div>
 
-            <div id="added-clients-container" class="col">
+            <div class="clients-container">
+                <div>
                 <span id="added">New Clients Added</span>
                 <div class="client">
                     <img src="./assets/new_default.jpeg" width="17%" />
                     <h2>KeatsDidIt</h2>
                     <div class="info">
-                        <p>Entrepreneaur</p>
+                        <p><em>Entrepreneaur</em></p>
                         <form>
                             <fieldset>
                                 <legend>Status:</legend>
                                 <div>
-                                    <input type="radio" id="contactChoice1" name="contact" value="email"
-                                        checked />Active
+                                    <input type="radio" class="contactChoice1" name="contact" value="email"
+                                        checked />
+                                        <p>Active</p>
                                 </div>
                             </fieldset>
                         </form>
@@ -80,13 +86,13 @@
 
                         <img src="./assets/new_default.jpeg" width="17%" />
                         <h2>Robyn Fenty</h2>
-                        <p>Student</p>
+                        <p><em>Student</em></p>
                         <form>
                             <fieldset>
                                 <legend>Status:</legend>
                                 <div>
-                                    <input type="radio" id="contactChoice1" name="contact" value="email"
-                                        checked />Active
+                                    <input type="radio" class="contactChoice1" name="contact" value="email"
+                                        checked /><p>Active</p>
                                 </div>
                             </fieldset>
                         </form>
@@ -94,21 +100,21 @@
                     <div class="client">
                         <img src="./assets/new_default.jpeg" width="17%" />
                         <h2>Doe Jones</h2>
-                        <p>Teacher</p>
+                        <p><em>Teacher</em></p>
                         <form>
                             <fieldset>
                                 <legend>Status:</legend>
                                 <div>
-                                    <input type="radio" id="contactChoice1" name="contact" value="email"
-                                        checked />Active
+                                    <input type="radio" class="contactChoice1" name="contact" value="email"
+                                        checked /><p>Active</p>
                                 </div>
                             </fieldset>
                         </form>
                     </div>
                 </div>
-
+            </div>
         </section>
-</body>
+</div>
 </main>
-
+</body>
 </html>
