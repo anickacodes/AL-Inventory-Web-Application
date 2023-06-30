@@ -30,6 +30,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     imageSelector.value = "";
   }
 });
+
 const allNewClientSection = document.querySelector(".all-new-clients");
 
 const form = document.querySelector(".create-client");
@@ -40,21 +41,33 @@ form.addEventListener("submit", (event) => {
   console.log(event.target.occupation.value);
 
   const newUserCard = document.createElement("div");
-  newUserCard.classList.add("info");
+  newUserCard.classList.add("client");
 
+  //this is 2nd
   const h2forNewUserName = document.createElement("h2");
   h2forNewUserName.innerText = event.target.name.value;
-  newUserCard.append(h2forNewUserName);
-  allNewClientSection.append(newUserCard);
 
-//   const divForNewUserImg = document.createElement("div");
+  const divForNewUserImg = document.createElement("div");
+
+  //this is first
   const imgForNewUserCard = document.createElement("img");
-  imgForNewUserCard.src = "./assets/new_default.jpeg", outerWidth="44%";
-  imgForNewUserCard.setAttribute("width", "44%");
-  newUserCard.append(imgForNewUserCard);
-//   divForNewUserImg.append()
-//   newUserCard.append(divForNewUserImg);
+  (imgForNewUserCard.src = "./assets/new_default.jpeg"), (outerWidth = "44%");
+  imgForNewUserCard.setAttribute("width", "17%");
 
+  // divForNewUserImg.append();
+  newUserCard.append(divForNewUserImg);
+
+  newUserCard.append(imgForNewUserCard);
+  newUserCard.append(h2forNewUserName);
+
+
+  //this is 3rd
+  const p = document.createElement("p");
+  const p2 = document.createElement("p");
+  p.innerText = event.target.occupation.value;
+  p = p.style.textDecorationStyle;
+   newUserCard.append(p);
+   allNewClientSection.append(newUserCard);
   // follow the html format to create
   //img tag create src and button append to new card and then to dom
   // as i do each - test the form out
