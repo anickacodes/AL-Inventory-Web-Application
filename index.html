@@ -10,14 +10,17 @@
     <link rel="icon" type="image" href="./assets/cnl.jpeg">
 
     <script src="./app.js" defer></script>
-    <nav><a id="directory" href="./directory/directory.html">Client Directory</a></nav>
+
 
     <title>CLN Stylez CMD </title>
 </head>
 
 <body>
+
     <div class="container"></div>
+
     <div class="login-container">
+
         <form id="log-in-form" action="" method="post">
             <label for="e-mail">Email</label>
             <input id="e-mail" type="text" placeholder="E-mail" name="e-mail">
@@ -28,13 +31,15 @@
     </div>
     <main role="main">
         <h1>Client Management</h1>
+        <nav><a id="directory" href="./directory/directory.html">Client Directory</a></nav>
+
 
         <section id="landing-page">
 
             <div class="new-clients-container">
                 <p id="new-1">Create New Client Profile</p>
                 <div><img src="./assets/new_default.jpeg" width="44%"> </div>
-                <form class="create-client">
+                <form class="create-client" id="formSubmission">
                     <label id="new-2">Image</label><br />
                     <div class="custom-dropdown">
 
@@ -51,14 +56,11 @@
                         <!-- Rectangular switch -->
                         <label class="switch">
                             <input type="checkbox">
+
                             <span class="slider"></span>
                         </label>
                         <br />
-                        <!-- Rounded switch -->
-                        <!-- <label class="switch">
-                            <input type="checkbox">
-                            <span class="slider round"></span>
-                        </label> <br /> -->
+
                         <button id="create" type="button">Clear</button>
                         <input id="submit" type="submit" />
                     </div>
@@ -69,11 +71,12 @@
                 <div class="all-new-clients">
                     <p id="added">New Clients Added</p>
                     <div class="client">
-                        <img src="./assets/new_default.jpeg" width="17%" />
-                        <h2>KeatsDidIt</h2>
-                        <div class="info">
+                        <div class="client-info">
+                            <img src="./assets/new_default.jpeg" width="17%" />
+                            <h2>KeatsDidIt</h2>
+
                             <p><em>Entrepreneaur</em></p>
-                            <form>
+                            <form id="#client-form">
                                 <!-- <fieldset> -->
                                 <legend>Status:</legend>
                                 <div>
@@ -85,7 +88,7 @@
                             </form>
                         </div>
 
-                        <div class="info">
+                        <div class="client-info">
                             <img src="./assets/new_default.jpeg" width="17%" />
                             <h2>Robyn Fenty</h2>
                             <p><em>Student</em></p>
@@ -101,7 +104,7 @@
                             </form>
                         </div>
 
-                        <div class="info">
+                        <div class="client-info">
                             <img src="./assets/new_default.jpeg" width="17%" />
                             <h2>Doe Jones</h2>
                             <p><em>Teacher</em></p>
