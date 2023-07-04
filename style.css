@@ -8,16 +8,20 @@ body {
     background-color: rgba(2, 36, 35, 0.148);
 }
 
+.whole-page {
+    display: grid;
+    grid-template-columns: 66.667% 33.334%;
+    height: 110vh;
+    overflow-y: auto;
+}
+
 /* #new-clients-container,
 #added-clients-container {
   width: 100%;
   height: auto;
 } */
 
-/* .container {
-height: 110vh;
-overflow-y:auto;
-} */
+
 /* 
 .client {
     margin: 27px 12px 20px 20px;
@@ -53,7 +57,7 @@ label {
 }
 
 .new-clients-container {
-    display: grid;
+    display:grid;
     text-align: center;
     margin: 97px 12px 30px 140px;
     width: 300px;
@@ -246,17 +250,25 @@ legend {
 
 @media (max-width: 600px) {
     body {
+        /* width: 100vh;
+        height: auto; */
         background-color: #f0f0f0;
+        /* text-align: center; */
     }
 
+    .whole-page {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
-
-@media (max-width: 758px) {
+/* 
+@media (max-width: 708px) {
 
     #new-clients-container,
     #added-clients-container {
         width: 100%;
         height: auto;
+
     }
-}
+
+} */
