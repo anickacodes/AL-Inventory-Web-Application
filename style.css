@@ -10,32 +10,13 @@ body {
 
 .whole-page {
     display: grid;
-    grid-template-columns: 66.667% 33.334%;
+    grid-column: auto;
+    grid-row:span;
+    /*  66.667% 33.334%; */
     height: 110vh;
     overflow-y: auto;
 }
 
-/* #new-clients-container,
-#added-clients-container {
-  width: 100%;
-  height: auto;
-} */
-
-
-/* 
-.client {
-    margin: 27px 12px 20px 20px;
-} */
-
-
-
-
-.login-container {
-    position: absolute;
-    right: 22px;
-
-
-}
 
 h1 {
     text-align: center;
@@ -57,12 +38,13 @@ label {
 }
 
 .new-clients-container {
-    display:grid;
+    /* display:grid; */
     text-align: center;
-    margin: 97px 12px 30px 140px;
-    width: 300px;
-    height: auto;
-    padding: 3%;
+    margin: auto;
+    /* 97px 12px 30px 140px */
+    width: 333px;
+    height:fit-content;
+    padding: 21px;
     border: 7px outset rgba(19, 92, 92, 0.828);
     border-radius: 1.2em;
     background-color: #4242ea
@@ -70,7 +52,8 @@ label {
 
 .all-new-clients {
 
-    margin: 28px 90px;
+    margin: auto;
+    /* 28px 90px */
 }
 
 fieldset {
@@ -80,19 +63,21 @@ fieldset {
 }
 
 .clients-container {
-    position: absolute;
+    /* position: absolute;
     top: 50px;
     right: 11%;
+    width: 500px; */
     width: 500px;
     height: auto;
-    margin: 88px 0px 0px 0px;
+    margin: auto;
+    /* 88px 0px 0px 0px */
     background-color: rgba(253, 180, 9, 0.455);
     border: 8px outset rgba(19, 92, 92, 0.828);
     border-radius: 1em;
     text-align: center;
-    display: grid;
+    /* display: grid;
     grid-template-rows: repeat(3, 1fr);
-    row-gap: 3.4px;
+    row-gap: 3.4px; */
 }
 
 /* .no-image-option {
@@ -256,9 +241,9 @@ legend {
         /* text-align: center; */
     }
 
-    .whole-page {
+    /* .whole-page {
         grid-template-columns: repeat(1, 1fr);
-    }
+    } */
 }
 
 /* 
