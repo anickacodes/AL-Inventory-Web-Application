@@ -34,13 +34,4 @@ If all required fields are not met, the inputs stay until the conditions are met
 
 *You cannot update "Active" status for old clients, only new ones*
 
-
-
-***Stretch goals***
-
-#If a field is missing a value, provide a default value when a resource is created on the page.
-
- toggle that is a checkbox 
- userLogin => 2nd html
- all working links
- alert
+Log-in on Submit redirects you to directory.html aka Client Management DataBase

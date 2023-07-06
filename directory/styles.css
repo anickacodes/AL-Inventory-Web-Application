@@ -9,25 +9,28 @@ body {
     background-color: rgba(6, 62, 129, 0.609);
     text-transform: uppercase;
     background-image: url('../assets/cnl.jpeg');
-    background-size: contain;
+    background-repeat: repeat;
     background-blend-mode: color-burn;
 }
 
 h1 {
     margin: 20px;
-    text-align: center;
+   
 }
 
 img {}
 
-h2 {
+h2 , h1 {
     text-align: center;
     color: rgb(145, 156, 165);
     text-decoration:overline;
+    text-shadow: 2px 2px 8px #FF0000;
 }
 
 nav {
     font-size: medium;
+    text-emphasis-style: '✨';
+    text-align: center;
 }
 
 video {

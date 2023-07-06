@@ -13,6 +13,7 @@
 }
 
 body {
+    background-color:rgba(23, 23, 121, 0.736);
     font-family: 'Roboto', sans-serif;
     height: 100%
 }
@@ -39,11 +40,11 @@ h1 {
 }
 
 #new-1 {
-    margin: 5px;
-    padding: 2px 12px;
+    margin: 7px; 
+    padding: 0px;
     font-size: 25px;
-    border-style: double;
-    border-color: #f0f0f0
+   
+    border-color: #f5d8d8
 }
 
 label {
@@ -158,8 +159,8 @@ input:checked+.slider:before {
 
 #added {
     font-size: 32px;
-    margin: 5px;
-    padding: 2px;
+    margin: 4px;
+    padding: 17px;
 }
 
 
