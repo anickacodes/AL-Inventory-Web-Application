@@ -24,25 +24,25 @@ document.addEventListener("DOMContentLoaded", (event) => {
     //1st
     const divForNewUserCard = document.createElement("div");
     divForNewUserCard.classList.add("client-info");
-//2nd
+    //2nd
     const imgForNewUserCard = document.createElement("img");
     imgForNewUserCard.src = "./assets/new_default.jpeg";
     imgForNewUserCard.setAttribute("width", "17%");
     divForNewUserCard.append(imgForNewUserCard);
-//3rd
+    //3rd
     const h2forNewUserName = document.createElement("h2");
     h2forNewUserName.innerText = event.target.name.value;
     divForNewUserCard.append(h2forNewUserName);
-//4th
+    //4th
     const pTagForNewUserBeforeImg = document.createElement("p");
     pTagForNewUserBeforeImg.innerText = event.target.occupation.value;
     divForNewUserCard.append(pTagForNewUserBeforeImg);
-//5th
+    //5th
     const formForNewUserCard = document.createElement("form");
     const legendForNewUserCard = document.createElement("legend");
     legendForNewUserCard.textContent = "Status:";
     formForNewUserCard.append(legendForNewUserCard);
-//6th
+    //6th
     const divForNewUserRadioBtn = document.createElement("div");
     const inputForNewUserBtn = document.createElement("input");
     inputForNewUserBtn.type = "radio";
@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     inputForNewUserBtn.checked = switchInput.checked;
 
     divForNewUserRadioBtn.append(inputForNewUserBtn);
-//7th
+    //7th
     const ptagforradiobtnfornewuser = document.createElement("p");
     if (switchInput.checked) {
       ptagforradiobtnfornewuser.innerText = "Active";
@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
       ptagforradiobtnfornewuser.innerText = "Not Active";
     }
     divForNewUserRadioBtn.append(ptagforradiobtnfornewuser);
-//8th
+    //8th
     const resetBtnForNewUserCard = document.createElement("button");
     resetBtnForNewUserCard.innerText = "Remove Client";
 
@@ -67,8 +67,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
     formForNewUserCard.append(divForNewUserRadioBtn);
     divForNewUserCard.append(formForNewUserCard);
-    allNewClientSection.append(divForNewUserCard);
-
+    allNewClientSection.prepend(divForNewUserCard);
+    
     // Clear the form inputs
     clearInputs();
   });
@@ -131,14 +131,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
         cancelButton.addEventListener("click", () => {
           // Remove the confirmation dialog
           confirmDialogue.remove();
-
-          // Add event listener to the "Confirm" button in the dialog
-          const confirmButton =
-            confirmDialogue.querySelector(".confirm-button");
-          confirmButton.addEventListener("click", () => {
-            // Remove the confirmation dialog
-            confirmDialogue.remove();
-          });
         });
       }
     }
@@ -148,13 +140,13 @@ document.addEventListener("DOMContentLoaded", (event) => {
   const resetButtons = allNewClientSection.querySelectorAll(
     "input[type='reset']"
   );
-  //rename all buttons 
+  //rename all buttons
   resetButtons.forEach((button) => {
     button.value = "Remove Client";
     button.addEventListener("click", () => {
       // Find the closest client profile card
       const clientCard = button.closest(".client-info");
-      console.log(clientCard)
+      // console.log(clientCard);
       if (clientCard) {
         // Display a confirmation dialog
         const confirmDelete = confirm(

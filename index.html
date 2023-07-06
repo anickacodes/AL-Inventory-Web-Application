@@ -32,10 +32,10 @@
             </form>
         </div>
 
-<div>
-        <h1>Client Management</h1>
-        <nav><a id="directory" href="./directory/directory.html">Client Directory</a></nav>
-    </div>
+        <div>
+            <h1>Client Management</h1>
+            <nav><a id="directory" href="./directory/directory.html">Client Directory</a></nav>
+        </div>
         <section id="landing-page">
 
             <div class="new-clients-container">
@@ -45,7 +45,7 @@
                     <label id="new-2">Image</label><br />
                     <div class="custom-dropdown">
 
-                        <select class="dropdown">
+                        <select class="dropdown" required>
                             <option value="default">Default</option>
                             <option value="no-image" class="no-image-option">No Image</option>
                         </select><br />
@@ -54,11 +54,11 @@
                         <input id="name" type="text" placeholder="Preferred Name" required><br />
 
                         <label class="occupation">Occuation:</label><br />
-                        <input id="occupation" type="text" placeholder="Occupation"><br />
+                        <input id="occupation" type="text" placeholder="Occupation" required { display: flex;
+                            flex-direction: column; height: 100vh; overflow-y: auto; }><br />
                         <!-- Rectangular switch -->
                         <label class="switch">
                             <input type="checkbox">
-
                             <span class="slider"></span>
                         </label>
                         <br />
@@ -128,8 +128,10 @@
                 </div>
             </div>
         </section>
-
     </div>
+    <footer class="footer">
+        <!-- Footer content -->
+      </footer>
 </body>
 
 </html>

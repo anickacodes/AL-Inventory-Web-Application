@@ -51,9 +51,8 @@ cited pages
 
 
 
-✨✨✨✨✨ SAM'S QUESTIONS :: ✨✨✨✨✨
+✨✨✨✨✨ QUESTIONS :: ✨✨✨✨✨
 
-    ***GARY'S BDAY CARD***
 
     ✨i have set for 100vh-viewwidth w a min of 650
     but view still gets smaller ? ? ? 
