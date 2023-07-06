@@ -62,13 +62,24 @@ document.addEventListener("DOMContentLoaded", (event) => {
     //8th
     const resetBtnForNewUserCard = document.createElement("button");
     resetBtnForNewUserCard.innerText = "Remove Client";
-
+    // resetBtnForNewUserCard.addEventListener("click", (event) => {
+    //   event.preventDefault();
+    //   const confirmDelete = confirm(
+    //     "Are you sure you want to delete this client profile?"
+    //   );
+    //   if (confirmDelete) {
+    //     const clientCard = event.target.closest(".client-info");
+    //     if (clientCard) {
+    //       clientCard.remove();
+    //     }
+    //   }
+    // });
     divForNewUserRadioBtn.append(resetBtnForNewUserCard);
 
     formForNewUserCard.append(divForNewUserRadioBtn);
     divForNewUserCard.append(formForNewUserCard);
     allNewClientSection.prepend(divForNewUserCard);
-    
+
     // Clear the form inputs
     clearInputs();
   });
@@ -89,15 +100,14 @@ document.addEventListener("DOMContentLoaded", (event) => {
   allNewClientSection.addEventListener("click", (event) => {
     const targetElement = event.target;
 
-    // Check if the clicked element is the "Remove Client" button
     if (
       targetElement.tagName === "BUTTON" &&
       targetElement.innerText === "Remove Client"
     ) {
-      // Find the closest client profile card
+      // Find closest client profile card to button
       const clientCard = targetElement.closest(".client-info");
       if (clientCard) {
-        // Display a confirmation dialog
+        // Display a confirmation popup
         function createConfirmationDialogue() {
           const confirmDialogue = document.createElement("div");
           confirmDialogue.classList.add("confirmation-dialog");
@@ -140,24 +150,26 @@ document.addEventListener("DOMContentLoaded", (event) => {
   const resetButtons = allNewClientSection.querySelectorAll(
     "input[type='reset']"
   );
-  //rename all buttons
   resetButtons.forEach((button) => {
     button.value = "Remove Client";
-    button.addEventListener("click", () => {
-      // Find the closest client profile card
-      const clientCard = button.closest(".client-info");
-      // console.log(clientCard);
-      if (clientCard) {
-        // Display a confirmation dialog
-        const confirmDelete = confirm(
-          "Are you sure you want to delete this client profile?"
-        );
-
-        // If user confirms deletion, remove the client profile card
-        if (confirmDelete) {
+    button.addEventListener("click", (event) => {
+      const confirmDelete = confirm(
+        "Are you sure you want to delete this client profile?"
+      );
+      if (confirmDelete) {
+        const clientCard = event.target.closest(".client-info");
+        if (clientCard) {
           clientCard.remove();
         }
       }
     });
   });
 });
+//edit client cards
+function editClientHandler(event) {
+  const clientInfo = event.target.closest('cient-info')
+  const clientName = clientInfo.querySelector('client-name')
+  const clientOccupation = clientInfo.querySelector('.client-occupation');
+
+  
+};
