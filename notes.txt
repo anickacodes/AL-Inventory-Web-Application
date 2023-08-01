@@ -1,3 +1,8 @@
+format a nav bar : 
+2nd 
+
+
+
 default img for client card - tried to make this a dropdown event 
 
 <img src="url" loading="auto" alt="some_text" width="" height="">

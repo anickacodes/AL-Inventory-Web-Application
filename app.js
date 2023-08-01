@@ -167,9 +167,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 });
 //edit client cards
 function editClientHandler(event) {
-  const clientInfo = event.target.closest('cient-info')
-  const clientName = clientInfo.querySelector('client-name')
-  const clientOccupation = clientInfo.querySelector('.client-occupation');
-
-  
-};
+  const clientInfo = event.target.closest("cient-info");
+  const clientName = clientInfo.querySelector("client-name");
+  const clientOccupation = clientInfo.querySelector(".client-occupation");
+}

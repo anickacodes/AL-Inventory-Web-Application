@@ -15,15 +15,16 @@ body {
 
 h1 {
     margin: 20px;
-   
+
 }
 
 img {}
 
-h2 , h1 {
+h2,
+h1 {
     text-align: center;
     color: rgb(145, 156, 165);
-    text-decoration:overline;
+    text-decoration: overline;
     text-shadow: 2px 2px 8px #FF0000;
 }
 
@@ -37,3 +38,4 @@ video {
     height: 220px;
     width: 280px;
 }
+
